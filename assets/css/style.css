@@ -59,7 +59,7 @@ h1 {
 }
 
 /* Project box */
-.project {
+/*.project {
     margin: 20px 0;
     padding: 20px;
     background-color: rgba(26, 26, 26, 0.4);
@@ -67,7 +67,7 @@ h1 {
     border-radius: 8px;
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(17px);
-}
+}*/
 
 /* Link style */
 a {
@@ -163,11 +163,11 @@ body::-webkit-scrollbar {
     z-index: -1;
 } */
  /* Project box */
-/*
+
 .project {
     margin: 20px 0;
     padding: 20px;
     background-color: rgba(26, 26, 26, 0.85);
     border-left: 4px solid #5D3FD3;
     border-radius: 8px;
-} */
+} 
