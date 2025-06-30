@@ -1,0 +1,33 @@
+h1 {
+    color: #00ffcc;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.project {
+    margin: 24px 0;
+    padding: 24px;
+    background-color: rgba(26, 26, 26, 0.85);
+    border-left: 4px solid #5D3FD3;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(93,63,211,0.10);
+    opacity: 0;
+    transform: translateY(80px) scale(0.95) rotateX(10deg);
+    transition: 
+        opacity 0.8s cubic-bezier(.4,2,.3,1),
+        transform 0.8s cubic-bezier(.4,2,.3,1);
+    will-change: opacity, transform;
+}
+.project.visible {
+    opacity: 1;
+    transform: none;
+}
+.project h2 {
+    font-weight: bold;
+    background: linear-gradient(270deg, #5D3FD3, #C54B8C, #B284BE, #5D3FD3);
+    background-size: 20% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: gradientFlow 10s linear infinite;
+}

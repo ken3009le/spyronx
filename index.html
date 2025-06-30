@@ -11,80 +11,157 @@
     <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"
         data-pace-options="{&quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script>
     <link href="/assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.base.css">
+    <link rel="stylesheet" href="assets/css/style.layout.css">
+    <link rel="stylesheet" href="assets/css/style.project.css">
+    <link rel="stylesheet" href="assets/css/style.intro.css">
+    <link rel="stylesheet" href="assets/css/style.button.css">
+    <link rel="stylesheet" href="assets/css/style.animation.css">
 </head>
 
 <body>
-
-<!--<button id="toggleBtn" class="btn-toggle">Toggle View</button>-->
-
-
-
-    <div class="container">
-
-        <h1>☣ OUR PROJECTS ☣</h1>
-
-        <div class="project">
-            <h2>picre-anime-viewer</h2>
-            <p><a href="https://picre-anime-viewer.vercel.app" target="_blank">View App</a> |
-                <a href="https://github.com/ken3009le/picre-anime-viewer" target="_blank">GitHub</a>
-            </p>
+    <header class="py-4 text-center">
+        <div class="avatar-wrapper mx-auto mb-3" style="position: relative; display: inline-block;">
+            <img src="assets/img/avatar.png" alt="Avatar" class="rounded-circle"
+                style="width:180px;height:180px;box-shadow:0 4px 32px #5D3FD3;object-fit:cover;">
+            <img src="assets/img/cosmetic/mong-vuot-rong.png" alt="Cosmetic" class="cosmetic-mongvuot"
+                style="position:absolute;left:0;top:0;width:180px;height:180px;pointer-events:none;">
         </div>
+        <h1 class="fw-bold mt-3 mb-1" style="font-size:2.2rem;letter-spacing:2px;background:linear-gradient(90deg,#5D3FD3,#C54B8C,#B284BE,#5D3FD3);background-size:200% 200%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:gradientFlow 10s linear infinite;">Ken Le</h1>
+        <p class="lead mb-2">Web Developer | Product Builder</p>
+        <div class="d-flex justify-content-center gap-3 mb-2">
+            <span class="badge bg-dark fs-6 px-3 py-2"><i class="bi bi-lightning-charge"></i> Đam mê công nghệ</span>
+            <span class="badge bg-dark fs-6 px-3 py-2"><i class="bi bi-heart"></i> Chia sẻ & giúp đỡ</span>
+            <span class="badge bg-dark fs-6 px-3 py-2"><i class="bi bi-code-slash"></i> Front-end Dev</span>
+        </div>
+        <p class="text-muted mb-0">Chào mừng bạn đến với portfolio các sản phẩm website của tôi.<br>Scroll xuống để xem các dự án nổi bật!</p>
+        <div class="scroll-down-anim mx-auto mt-4"></div>
+        <div class="d-flex justify-content-center gap-3 mt-4">
+            <a href="https://facebook.com/ken3009le" target="_blank" class="link-item" title="Facebook">
+                <img src="assets/img/social/facebook.webp" alt="Facebook" class="icon" style="width:40px;">
+            </a>
+            <a href="https://github.com/ken3009le" target="_blank" class="link-item" title="GitHub">
+                <img src="assets/img/social/github.webp" alt="GitHub" class="icon" style="width:40px;">
+            </a>
+            <a href="https://t.me/ken3009le" target="_blank" class="link-item" title="Telegram">
+                <img src="assets/img/social/telegram.webp" alt="Telegram" class="icon" style="width:40px;">
+            </a>
+            <a href="https://www.instagram.com/ken3009le" target="_blank" class="link-item" title="Instagram">
+                <img src="assets/img/social/instagram.webp" alt="Instagram" class="icon" style="width:40px;">
+            </a>
+            <a href="https://www.tiktok.com/@ken3009le" target="_blank" class="link-item" title="TikTok">
+                <img src="assets/img/social/tiktok.webp"alt="TikTok" class="icon" style="width:40px;">
+            </a>
+        </div>
+    </header>
 
-        <div class="project">
-            <h2>ken-cors (cre cors-everywhere)</h2>
-            <p><a href="https://ken-cors.vercel.app" target="_blank">View App</a> |
-                <a href="https://github.com/ken3009le/ken-cors" target="_blank">GitHub</a>
-            </p>
-        </div>
-        <div class="project">
-            <h2>spyronx-animev2</h2>
-            <p><a href="https://spyronx-animev2.vercel.app" target="_blank">View App</a> |
-                <a href="https://github.com/ken3009le/spyronx-animev2" target="_blank">GitHub</a>
-            </p>
-        </div>
+    <section class="intro-section text-center py-5" id="introSection" style="background:rgba(26,26,26,0.85);">
+        <h2 class="fw-bold mb-1" style="font-size:1.8rem;">Dự án nổi bật</h2>
+        <p class="lead mb-2">Các sản phẩm website đã thực hiện với niềm đam mê sáng tạo và công nghệ.</p>
+        <div class="scroll-down-anim"></div>
+    </section>
 
-        <div class="project">
-            <h2>spyronx-anime</h2>
-            <p><a href="https://spyronx-anime.vercel.app" target="_blank">View App</a></p>
-            <a href="https://github.com/ken3009le/spyronx-anime" target="_blank"></a>
+    <main>
+        <div class="container projects-container">
+            <h1 class="mt-5 mb-4 text-center">☣ OUR PROJECTS ☣</h1>
+            <div class="project">
+                <h2>picre-anime-viewer</h2>
+                <p>
+                    <a href="https://picre-anime-viewer.vercel.app" target="_blank">View App</a> |
+                    <a href="https://github.com/ken3009le/picre-anime-viewer" target="_blank">GitHub</a>
+                </p>
+            </div>
+            <div class="project">
+                <h2>ken-cors (cre cors-everywhere)</h2>
+                <p>
+                    <a href="https://ken-cors.vercel.app" target="_blank">View App</a> |
+                    <a href="https://github.com/ken3009le/ken-cors" target="_blank">GitHub</a>
+                </p>
+            </div>
+            <div class="project">
+                <h2>spyronx-animev2</h2>
+                <p>
+                    <a href="https://spyronx-animev2.vercel.app" target="_blank">View App</a> |
+                    <a href="https://github.com/ken3009le/spyronx-animev2" target="_blank">GitHub</a>
+                </p>
+            </div>
+            <div class="project">
+                <h2>spyronx-anime</h2>
+                <p>
+                    <a href="https://spyronx-anime.vercel.app" target="_blank">View App</a> |
+                    <a href="https://github.com/ken3009le/spyronx-anime" target="_blank">GitHub</a>
+                </p>
+            </div>
+            <div class="project">
+                <h2>spyronx-nsfwv2</h2>
+                <p>
+                    <a href="https://spyronx-nsfwv2.vercel.app" target="_blank">View App</a> |
+                    <a href="https://github.com/ken3009le/spyronx-nsfwv2" target="_blank">GitHub</a>
+                </p>
+            </div>
+            <div class="project">
+                <h2>spyronx-nsfw</h2>
+                <p>
+                    <a href="https://spyronx-nsfw.vercel.app" target="_blank">View App</a> |
+                    <a href="https://github.com/ken3009le/spyronx-nsfw" target="_blank">GitHub</a>
+                </p>
+            </div>
+            <div class="project">
+                <h2>story</h2>
+                <p>
+                    <a href="https://spyronx-story.vercel.app" target="_blank">View App</a> |
+                    <a href="https://github.com/ken3009le/story" target="_blank">GitHub</a>
+                </p>
+            </div>
         </div>
+    </main>
 
-        <div class="project">
-            <h2>spyronx-nsfwv2</h2>
-            <p><a href="https://spyronx-nsfwv2.vercel.app" target="_blank">View App</a> |
-                <a href="https://github.com/ken3009le/spyronx-nsfwv2" target="_blank">GitHub</a>
-            </p>
-        </div>
-
-        <div class="project">
-            <h2>spyronx-nsfw</h2>
-            <p><a href="https://spyronx-nsfw.vercel.app" target="_blank">View App</a> |
-                <a href="https://github.com/ken3009le/spyronx-nsfw" target="_blank">GitHub</a>
-            </p>
-        </div>
-
-        <div class="project">
-            <h2>story</h2>
-            <p><a href="https://spyronx-story.vercel.app" target="_blank">View App</a> |
-                <a href="https://github.com/ken3009le/story" target="_blank">GitHub</a>
-            </p>
-        </div>
-    </div>
+    <audio id="backgroundMusic" loop>
+        <source src="assets/sound/background.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button id="musicBtn">Stop Music</button>
+    <div class="background-blur"></div>
+    <span id="realTime"></span>
 
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/fetchbanner.js"></script>
     <script src="assets/js/showbackground.js"></script>
     <script src="assets/js/musictoggle.js"></script>
-    <audio id="backgroundMusic" loop>
-        <source src="assets/sound/background.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-    </audio>
-    <button id="toggleBtn">Toggle View</button>
-    <button id="musicBtn">Stop Music</button>
-    <div class="background-blur"></div>
+    <script src="assets/js/realtime.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const intro = document.getElementById('introSection');
+            const projectsContainer = document.querySelector('.projects-container');
+            const projects = document.querySelectorAll('.project');
 
+            // Intersection Observer cho project
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.2 });
+            projects.forEach(project => observer.observe(project));
 
+            // Ẩn/hiện intro khi scroll
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > window.innerHeight * 0.4) {
+                    intro.classList.add('hide');
+                    projectsContainer.classList.add('show');
+                } else {
+                    intro.classList.remove('hide');
+                    projectsContainer.classList.remove('show');
+                    // Ẩn lại các project khi scroll lên đầu
+                    projects.forEach(p => p.classList.remove('visible'));
+                    projects.forEach(project => observer.observe(project));
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

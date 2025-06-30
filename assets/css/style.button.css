@@ -1,0 +1,35 @@
+/* Button styles */
+#musicBtn {
+    background-size: 400% 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: gradientFlow 10s linear infinite;
+    position: fixed;
+    right: 20px;
+    top: 80px;
+    z-index: 9999;
+}
+#musicBtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+.btn-toggle {
+    border-image: linear-gradient(270deg, #5D3FD3, #C54B8C, #B284BE, #5D3FD3) 1;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(270deg, #5D3FD3, #C54B8C, #B284BE, #5D3FD3);
+    background-size: 400% 400%;
+    animation: gradientFlow 10s linear infinite;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+.btn-toggle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}

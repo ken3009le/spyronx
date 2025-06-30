@@ -1,0 +1,32 @@
+/* Base styles, reset, body, fonts, link, scrollbar */
+body {
+    background-image: url('/assets/img/background/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 40px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #00ccff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    width: 8px;
+    background: #222;
+}
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+    background: #5D3FD3;
+    border-radius: 8px;
+}
